@@ -1,0 +1,12 @@
+<div class="site-container">
+  <div class="artwork-show-container">
+    <div>
+      <%= cl_image_tag @artwork.photo.key %>
+    </div>
+    <div>
+      <h2><%= @artwork.title %></h2>
+      <p><%= @artwork.dimension %></p>
+      <p><%= @artwork.technique %></p>
+    </div>
+  </div>
+</div>

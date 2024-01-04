@@ -14,4 +14,8 @@ class ArtworksController < ApplicationController
   def poemes
     @artworks = Artwork.where(collection_id: 4)
   end
+
+  def show
+    @artwork = Artwork.find(params[:id])
+  end
 end
